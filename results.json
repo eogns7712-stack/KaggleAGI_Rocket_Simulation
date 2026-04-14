@@ -1,0 +1,548 @@
+{
+  "results": {
+    "RULE": {
+      "total_score": 228,
+      "correct_count": 21,
+      "partial_count": 0,
+      "invalid_count": 0,
+      "critical_fail_count": 0,
+      "phase_scores": {
+        "phase1_launch_to_escape": 24,
+        "phase2_escape_to_europa": 20,
+        "phase3_europa_approach_to_landing": 34,
+        "phase4_surface_operations": 58,
+        "phase5_europa_ascent_to_escape": 24,
+        "phase6_europa_escape_to_earth": 20,
+        "phase7_earth_arrival_to_landing": 48
+      },
+      "details": [
+        {
+          "id": "phase1_1_launch",
+          "phase": "phase1_launch_to_escape",
+          "action": "LAUNCH",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase1_2_escape_earth",
+          "phase": "phase1_launch_to_escape",
+          "action": "CONTINUE_BURN",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase2_1_separate_s1",
+          "phase": "phase2_escape_to_europa",
+          "action": "SEPARATE_S1",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase2_2_move_to_europa",
+          "phase": "phase2_escape_to_europa",
+          "action": "MOVE_TO_EUROPA",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase3_1_reignite_booster",
+          "phase": "phase3_europa_approach_to_landing",
+          "action": "IGNITE_S2",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase3_2_separate_s2",
+          "phase": "phase3_europa_approach_to_landing",
+          "action": "SEPARATE_S2",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase3_3_s3_landing",
+          "phase": "phase3_europa_approach_to_landing",
+          "action": "CONTROL_BOOSTER",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase4_1_drill_ice",
+          "phase": "phase4_surface_operations",
+          "action": "DRILL_ICE",
+          "score": 8,
+          "status": "correct",
+          "critical": false
+        },
+        {
+          "id": "phase4_2_insert_pipe",
+          "phase": "phase4_surface_operations",
+          "action": "INSERT_PIPE",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase4_3_tube_line",
+          "phase": "phase4_surface_operations",
+          "action": "PUMP_WATER",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase4_4_electrolysis",
+          "phase": "phase4_surface_operations",
+          "action": "RUN_ELECTROLYSIS",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase4_5_fill_tanks_and_sample",
+          "phase": "phase4_surface_operations",
+          "action": "FILL_S4",
+          "score": 8,
+          "status": "correct",
+          "critical": false
+        },
+        {
+          "id": "phase4_6_close_tubes",
+          "phase": "phase4_surface_operations",
+          "action": "CLOSE_VALVES",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase5_1_stage4_launch",
+          "phase": "phase5_europa_ascent_to_escape",
+          "action": "LAUNCH_S4",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase5_2_escape_europa_orbit",
+          "phase": "phase5_europa_ascent_to_escape",
+          "action": "CONTINUE_BURN",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase6_1_separate_stage4",
+          "phase": "phase6_europa_escape_to_earth",
+          "action": "SEPARATE_S4",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase6_2_move_to_earth",
+          "phase": "phase6_europa_escape_to_earth",
+          "action": "MOVE_TO_EARTH",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase7_1_separate_stage5",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "SEPARATE_S5",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase7_2_return_module_booster",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "IGNITE_RETURN",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase7_3_return_module_reignite_control",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "STOP_RETURN_BURN",
+          "score": 10,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase7_4_return_module_landing",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "LAND",
+          "score": 14,
+          "status": "correct",
+          "critical": true
+        }
+      ],
+      "bonus_score": 90,
+      "bonus_reasons": [
+        "mission_completion:+50",
+        "perfect_run:+25",
+        "no_critical_fail:+15"
+      ],
+      "final_score": 318
+    },
+    "DUMMY": {
+      "total_score": -424,
+      "correct_count": 1,
+      "partial_count": 0,
+      "invalid_count": 0,
+      "critical_fail_count": 0,
+      "phase_scores": {
+        "phase1_launch_to_escape": -40,
+        "phase2_escape_to_europa": -40,
+        "phase3_europa_approach_to_landing": -60,
+        "phase4_surface_operations": -126,
+        "phase5_europa_ascent_to_escape": -40,
+        "phase6_europa_escape_to_earth": -70,
+        "phase7_earth_arrival_to_landing": -48
+      },
+      "details": [
+        {
+          "id": "phase1_1_launch",
+          "phase": "phase1_launch_to_escape",
+          "action": "FILL_S5",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase1_2_escape_earth",
+          "phase": "phase1_launch_to_escape",
+          "action": "MOVE_TO_EARTH",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase2_1_separate_s1",
+          "phase": "phase2_escape_to_europa",
+          "action": "FILL_S4",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase2_2_move_to_europa",
+          "phase": "phase2_escape_to_europa",
+          "action": "SEPARATE_S5",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase3_1_reignite_booster",
+          "phase": "phase3_europa_approach_to_landing",
+          "action": "LAND",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase3_2_separate_s2",
+          "phase": "phase3_europa_approach_to_landing",
+          "action": "START_LANDING",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase3_3_s3_landing",
+          "phase": "phase3_europa_approach_to_landing",
+          "action": "CONTINUE_BURN",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase4_1_drill_ice",
+          "phase": "phase4_surface_operations",
+          "action": "CONTINUE_BURN",
+          "score": -6,
+          "status": "wrong_action",
+          "critical": false
+        },
+        {
+          "id": "phase4_2_insert_pipe",
+          "phase": "phase4_surface_operations",
+          "action": "RUN_ELECTROLYSIS",
+          "score": -60,
+          "status": "electrolysis_before_pipe_inserted",
+          "critical": true
+        },
+        {
+          "id": "phase4_3_tube_line",
+          "phase": "phase4_surface_operations",
+          "action": "CONTINUE_BURN",
+          "score": -18,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase4_4_electrolysis",
+          "phase": "phase4_surface_operations",
+          "action": "MOVE_TO_EUROPA",
+          "score": -18,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase4_5_fill_tanks_and_sample",
+          "phase": "phase4_surface_operations",
+          "action": "INSERT_PIPE",
+          "score": -6,
+          "status": "wrong_action",
+          "critical": false
+        },
+        {
+          "id": "phase4_6_close_tubes",
+          "phase": "phase4_surface_operations",
+          "action": "CONTROL_BOOSTER",
+          "score": -18,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase5_1_stage4_launch",
+          "phase": "phase5_europa_ascent_to_escape",
+          "action": "IGNITE_RETURN",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase5_2_escape_europa_orbit",
+          "phase": "phase5_europa_ascent_to_escape",
+          "action": "START_LANDING",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase6_1_separate_stage4",
+          "phase": "phase6_europa_escape_to_earth",
+          "action": "CONTINUE_BURN",
+          "score": -50,
+          "status": "burn_empty_stage4",
+          "critical": true
+        },
+        {
+          "id": "phase6_2_move_to_earth",
+          "phase": "phase6_europa_escape_to_earth",
+          "action": "START_LANDING",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase7_1_separate_stage5",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "FILL_S5",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase7_2_return_module_booster",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "IGNITE_RETURN",
+          "score": 12,
+          "status": "correct",
+          "critical": true
+        },
+        {
+          "id": "phase7_3_return_module_reignite_control",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "SEPARATE_S5",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        },
+        {
+          "id": "phase7_4_return_module_landing",
+          "phase": "phase7_earth_arrival_to_landing",
+          "action": "MOVE_TO_EUROPA",
+          "score": -20,
+          "status": "wrong_action",
+          "critical": true
+        }
+      ],
+      "bonus_score": 15,
+      "bonus_reasons": [
+        "no_critical_fail:+15"
+      ],
+      "final_score": -409
+    }
+  },
+  "summary": {
+    "RULE": {
+      "final_score": 318,
+      "raw_score": 228,
+      "bonus_score": 90,
+      "bonus_reasons": [
+        "mission_completion:+50",
+        "perfect_run:+25",
+        "no_critical_fail:+15"
+      ],
+      "correct_count": 21,
+      "partial_count": 0,
+      "invalid_count": 0,
+      "critical_fail_count": 0,
+      "phase_success_rate": {
+        "phase1_launch_to_escape": {
+          "correct": 2,
+          "total": 2,
+          "success_rate_percent": 100.0,
+          "phase_score": 24
+        },
+        "phase2_escape_to_europa": {
+          "correct": 2,
+          "total": 2,
+          "success_rate_percent": 100.0,
+          "phase_score": 20
+        },
+        "phase3_europa_approach_to_landing": {
+          "correct": 3,
+          "total": 3,
+          "success_rate_percent": 100.0,
+          "phase_score": 34
+        },
+        "phase4_surface_operations": {
+          "correct": 6,
+          "total": 6,
+          "success_rate_percent": 100.0,
+          "phase_score": 58
+        },
+        "phase5_europa_ascent_to_escape": {
+          "correct": 2,
+          "total": 2,
+          "success_rate_percent": 100.0,
+          "phase_score": 24
+        },
+        "phase6_europa_escape_to_earth": {
+          "correct": 2,
+          "total": 2,
+          "success_rate_percent": 100.0,
+          "phase_score": 20
+        },
+        "phase7_earth_arrival_to_landing": {
+          "correct": 4,
+          "total": 4,
+          "success_rate_percent": 100.0,
+          "phase_score": 48
+        }
+      },
+      "worst_failures": [],
+      "critical_fail_details": []
+    },
+    "DUMMY": {
+      "final_score": -409,
+      "raw_score": -424,
+      "bonus_score": 15,
+      "bonus_reasons": [
+        "no_critical_fail:+15"
+      ],
+      "correct_count": 1,
+      "partial_count": 0,
+      "invalid_count": 0,
+      "critical_fail_count": 0,
+      "phase_success_rate": {
+        "phase1_launch_to_escape": {
+          "correct": 0,
+          "total": 2,
+          "success_rate_percent": 0.0,
+          "phase_score": -40
+        },
+        "phase2_escape_to_europa": {
+          "correct": 0,
+          "total": 2,
+          "success_rate_percent": 0.0,
+          "phase_score": -40
+        },
+        "phase3_europa_approach_to_landing": {
+          "correct": 0,
+          "total": 3,
+          "success_rate_percent": 0.0,
+          "phase_score": -60
+        },
+        "phase4_surface_operations": {
+          "correct": 0,
+          "total": 6,
+          "success_rate_percent": 0.0,
+          "phase_score": -126
+        },
+        "phase5_europa_ascent_to_escape": {
+          "correct": 0,
+          "total": 2,
+          "success_rate_percent": 0.0,
+          "phase_score": -40
+        },
+        "phase6_europa_escape_to_earth": {
+          "correct": 0,
+          "total": 2,
+          "success_rate_percent": 0.0,
+          "phase_score": -70
+        },
+        "phase7_earth_arrival_to_landing": {
+          "correct": 1,
+          "total": 4,
+          "success_rate_percent": 25.0,
+          "phase_score": -48
+        }
+      },
+      "worst_failures": [
+        {
+          "id": "phase4_2_insert_pipe",
+          "phase": "phase4_surface_operations",
+          "action": "RUN_ELECTROLYSIS",
+          "score": -60,
+          "status": "electrolysis_before_pipe_inserted"
+        },
+        {
+          "id": "phase6_1_separate_stage4",
+          "phase": "phase6_europa_escape_to_earth",
+          "action": "CONTINUE_BURN",
+          "score": -50,
+          "status": "burn_empty_stage4"
+        },
+        {
+          "id": "phase1_1_launch",
+          "phase": "phase1_launch_to_escape",
+          "action": "FILL_S5",
+          "score": -20,
+          "status": "wrong_action"
+        },
+        {
+          "id": "phase1_2_escape_earth",
+          "phase": "phase1_launch_to_escape",
+          "action": "MOVE_TO_EARTH",
+          "score": -20,
+          "status": "wrong_action"
+        },
+        {
+          "id": "phase2_1_separate_s1",
+          "phase": "phase2_escape_to_europa",
+          "action": "FILL_S4",
+          "score": -20,
+          "status": "wrong_action"
+        }
+      ],
+      "critical_fail_details": []
+    }
+  },
+  "scenario_count": 21,
+  "mission_completion_bonus": 50,
+  "perfect_run_bonus": 25,
+  "no_critical_fail_bonus": 15
+}
